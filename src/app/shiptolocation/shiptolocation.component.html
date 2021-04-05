@@ -1,0 +1,69 @@
+<h2 font="bold">Ship To Location</h2>
+
+<div [formGroup]="newPurOrdForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Ship To Location</mat-label>
+   <select matNativeControl required formControlName="shipto_loc" placeholder="Ship To Location">
+     <option value="supplier">select shipto</option>
+     <option value="MGX-Kent">MGX-Kent</option>
+     <option value="NOY-PENT">NOY-PENT</option>
+      </select>
+ </mat-form-field>
+</div>
+
+<div [formGroup]="newPurOrdForm">
+  <mat-form-field appearance="fill">
+ <mat-label>Altn</mat-label>
+   <input matInput  formControlName="shipto_altn" placeholder="Altn">
+  </mat-form-field>
+</div>
+
+
+<div [formGroup]="newPurOrdForm">
+  <mat-form-field appearance="fill">
+ <mat-label>Address</mat-label>
+   <input matInput  formControlName="shipto_add" placeholder="Address">
+  </mat-form-field>
+</div>
+
+<div [formGroup]="newPurOrdForm">
+  <mat-form-field appearance="fill">
+  <mat-label>Suite/Unit#</mat-label>
+  <input matInput formControlName="shipto_add_suit" placeholder="Suite/Unit#">
+  </mat-form-field>
+</div>
+
+<div class="row">
+  <div class="col-md-3" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+      <mat-label>City</mat-label>
+      <input matInput formControlName="shipto_city" placeholder="City">
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-3" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+      <mat-label>State</mat-label>
+      <input matInput formControlName="shipto_state" placeholder="State">
+      </mat-form-field>
+  </div>
+
+  <div class="col-md-3" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Zip</mat-label>
+      <input matInput formControlName="shipto_zip" placeholder="Zip">
+      </mat-form-field>
+  </div>
+</div>
+
+<div [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Country</mat-label>
+    <select matNativeControl required formControlName="shipto_country" aria-placeholder="Country">
+      <option value="country">select country</option>
+      <option value="val">val1</option>
+      <option value="val2">val2</option>
+      <option value="val3">val3</option>
+    </select>
+  </mat-form-field>
+</div>

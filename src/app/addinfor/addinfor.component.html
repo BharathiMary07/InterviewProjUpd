@@ -1,0 +1,123 @@
+<h2 font="bold">Additional Information</h2>
+
+<div [formGroup]="newPurOrdForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Frieght Forwarder</mat-label>
+  <select matNativeControl required formControlName="freightfor" aria-placeholder="Freight Forwarder">
+    <option value="fri">select fri</option>
+    <option value="val">val1</option>
+    <option value="val2">val2</option>
+    <option value="val3">val3</option>
+  </select>
+</mat-form-field>
+</div>
+
+<div class="row">
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Vessel</mat-label>
+      <input matInput formControlName="vessel" placeholder="Vessel">
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6" [formGroup]="newPurOrdForm">
+      <mat-form-field appearance="fill">
+        <mat-label>Air</mat-label>
+        <input matInput formControlName="airbill" placeholder="Air">
+        </mat-form-field>
+      </div>
+
+
+<div class="row">
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+      <mat-form-field appearance="fill">
+      <mat-label> Planned Ex-Factory Date</mat-label>
+      <input matInput [matDatepicker]="picker1" formControlName="plan_exfac_date" placeholder="Planned Ex-Factory Date">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+    <mat-label> Ex-Factory Date</mat-label>
+      <input matInput [matDatepicker]="picker2" formControlName="exfac_date" placeholder="Ex-Factory Date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+    <mat-label> Departure Port</mat-label>
+        <select matNativeControl required formControlName="depart_port" placeholder="Departure Port">
+        <option value="deptport">select departure port</option>
+        <option value="val">val1</option>
+        <option value="val2">val2</option>
+        <option value="val3">val3</option>
+      </select>
+    </mat-form-field>
+  </div>
+
+    <div class="col-md-6" [formGroup]="newPurOrdForm">
+      <mat-form-field appearance="fill">
+      <mat-label> ETD Port</mat-label>
+      <input matInput [matDatepicker]="picker3" formControlName="etd_port" placeholder="ETD Port">
+      <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+      <mat-datepicker #picker3></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+    <mat-label> Arrival Port</mat-label>
+        <select matNativeControl required formControlName="arr_port" placeholder="Arrival Port">
+        <option value="deptport">select arrival port</option>
+        <option value="val">val1</option>
+        <option value="val2">val2</option>
+        <option value="val3">val3</option>
+      </select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+      <mat-form-field appearance="fill">
+      <mat-label> ETA Port</mat-label>
+      <input matInput [matDatepicker]="picker4" formControlName="eta_port" placeholder="ETA Port">
+      <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+      <mat-datepicker #picker4></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+    <mat-form-field appearance="fill">
+    <mat-label> Discharge Port</mat-label>
+        <select matNativeControl required formControlName="discharge_port" placeholder="Discharge Port">
+        <option value="disport">select discharge port</option>
+        <option value="val">val1</option>
+        <option value="val2">val2</option>
+        <option value="val3">val3</option>
+      </select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-6" [formGroup]="newPurOrdForm">
+      <mat-form-field appearance="fill">
+      <mat-label> Wiring Instructions</mat-label>
+      <select matNativeControl required formControlName="wiring_instr" placeholder="Wiring Instructions">
+        <option value="wireinst">select wiring instructions</option>
+        <option value="val">val1</option>
+        <option value="val2">val2</option>
+        <option value="val3">val3</option>
+      </select>
+    </mat-form-field>
+  </div>
+</div>
